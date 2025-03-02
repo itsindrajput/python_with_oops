@@ -1,0 +1,1 @@
+img = ImageTk.PhotoImage(Image.open(file='logo.jpeg'))
