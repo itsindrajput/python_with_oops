@@ -25,8 +25,9 @@ text_label.pack(pady=2)
 
 #Login Form Begins Here -> For Email:
 email_label = Label(root, text='Enter Email', fg='white', bg='#1f1f1f')
-email_label.pack(pady=(45,10))
 email_label.config(font=('georgia', 14))
+email_label.pack(pady=(45,10))
+
 
 #For email input we will use Entry class
 email_input = Entry(root, width=45)
