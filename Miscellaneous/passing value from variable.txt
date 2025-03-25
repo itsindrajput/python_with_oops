@@ -1,0 +1,58 @@
+def f1():
+  firstname = "rishabh"
+  lastname = "singh"
+
+def f2():
+  print(f"FirstName = {} LastName = {}")
+
+f1()
+f2()
+
+
+___________________________________________________________
+
+
+
+def f1():
+  global firstname, lastname
+  firstname = "rishabh"
+  lastname = "singh"
+
+def f2():
+  print(f"FirstName = {firstname} LastName = {lastname}")
+  
+f1()
+f2()
+
+
+
+___________________________________________________________
+
+
+
+class F1:
+    firstname = "rishabh"
+    lastname = "singh"
+
+class F2(F1):
+    def __init__(self): 
+        print(f"FirstName = {self.firstname} LastName = {self.lastname}")  
+
+f = F2()  
+
+
+___________________________________________________________
+
+
+
+class F1:
+    def __init__(self):
+        self.firstname = "rishabh"
+        self.lastname = "singh"
+
+class F2(F1):
+    def __init__(self):
+        super().__init__()  
+        print(f"FirstName = {self.firstname} LastName = {self.lastname}")
+
+f = F2()  
