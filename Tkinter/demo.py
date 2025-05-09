@@ -336,8 +336,6 @@ def clear(self):
         self.bill_no.set(0)
         self.bill_no.set(0)
         self.phone.set(0)
-
-
 def exit1(self):
     self.root.destroy()
 

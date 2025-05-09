@@ -51,8 +51,8 @@ del student1.percentage
 print(student1.__dict__) 
 
 # delete object 
-del student1
-print(student1)
+# del student1
+# print(student1)
 
 
 
