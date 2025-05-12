@@ -110,4 +110,21 @@ print("Even" if int(input("Enter a number: "))%2==0 else "Odd")
 
 
 #There is no conditional operator (? :)  in pyhton.
-#There is no concept of switch statement in python.
+
+
+# Switch statement in python. The bellow code runs only in python 3.10 or above versions
+"""
+def number_to_string(argument):
+    match argument:
+        case 0:
+            return "zero"
+        case 1:
+            return "one"
+        case 2:
+            return "two"
+        case default: # OR case _:
+            return "something"
+ 
+head = number_to_string(2)
+print(head)
+"""
