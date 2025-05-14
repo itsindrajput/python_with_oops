@@ -146,6 +146,13 @@ for variable in iterable-sequence:
 #WAP to print unicode of each character of the string "Rajput".
 #ord() – Converts a single character to its corresponding Unicode integer value.
 
+"""
 str = "Rajput"
 for x in str:
     print(x, "->", ord(x))
+"""
+
+
+#The range() Function
+for i in range(0,10,2):
+    print(i, end=" ")
