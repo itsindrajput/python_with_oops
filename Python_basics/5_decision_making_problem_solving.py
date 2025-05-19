@@ -91,7 +91,16 @@ else:
 
 # 8️. Write a Python script to check whether a given year is a leap year or not.
 # Hint: A year is a leap year if it's divisible by 4 but not by 100, unless it's also divisible by 400.
-
+"""
+n = int(input("Enter a year to check if it is a leap year or not: "))
+if (n%4 == 0):
+    if (n%400 == 0):
+        print("It is a leap year!")
+    elif (n%100 == 0):
+        print("It is not a leap year!")
+    else:
+        print("It is a leap year!")    
+"""
 
 
 # 9️ Write a Python script to check whether a given number is positive, negative, or zero.
@@ -109,4 +118,15 @@ else:
 
 # 10. Write a Python script to take a complex number as input and display whether the real part or the imaginary part is greater.
 # Hint: Use complex() to accept input and compare real and imag attributes.
+"""
+complex_number = complex(input("Enter a complex number: "))
+r = complex_number.real
+i = complex_number.imag
 
+if (r>i):
+    print(r,">",i, "Real Part Is Greater!")
+elif (r<i):
+    print(r,"<",i,"Imaginary Part Is Greater!")
+else:
+    print(r,"=",i, "Real and Imaginary Parts Are Equal!")
+"""
