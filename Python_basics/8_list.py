@@ -133,3 +133,63 @@ print(l3)  # Output: [1, 5, 9, 2, 3, 1]
 l1 += l2
 print(l1)  # Output: [1, 5, 9, 2, 3, 1]
 """
+
+
+# Repetition Operator
+"""
+asterisk symbol between two integer value will result in multiplication: 2*3 = 6, 3.4*4.5 = 15.299999999
+If one is list and other is interger than this asterisk will work as Repetition Operator. [1,2]*3 = [1,2,1,2,1,2]
+"""
+
+
+# List of Lists (Nested Lists)
+"""
+l1 = [5, 4.5, True, "rks"]
+print(l1)           # [5, 4.5, True, 'rks']
+
+l2 = [5, 4.5, True, [9, 4, 7]]
+print(l2)           # [5, 4.5, True, [9, 4, 7]]
+print(l2[3][0])     # 9
+
+l3 = [[1,2,3], [4,5,6], [7,8,9]]
+print(l3[0])        # [1, 2, 3]
+print(l3[1])        # [4, 5, 6]
+print(l3[2])        # [7, 8, 9]
+
+print(l3[0][0])     # 1
+print(l3[1][0])     # 4
+print(l3[2][0])     # 7
+
+print(l3[2][3])     # IndexError: list index out of range
+"""
+
+
+# List Object Attributes & Methods:
+"""
+# help(list)          # We can get documentation about the built-in list class in Python.
+
+# print(dir(list))
+
+# Every class have variable and function known as attribute.
+l1 = [5, 4.5, True, "rks"] # l1 is an object of list class
+l1.f1()     # Here l1 object that wants to call f1 function from its list class. And by applying dot . on any list object we can only be able to call the function of that list class only. And in this case there is no f1 function available so it will through and error. And this is a type of AttributeError: which says 'list' object has no attribute 'f1'
+"""
+
+
+l = [3,5,6,7,8,1,9,1]
+del l[1]        
+# del modifies the original list. del is a statement, not a method.
+print(l)        # [3, 6, 7, 8, 1, 9, 1]
+
+
+# Deletes by value. Removes only the first occurrence. Raises ValueError if value not found
+l.remove(1)
+print(l)        # [3, 6, 7, 8, 9, 1]
+
+
+# Deletes by index (default: last item). If Index is not passed delete the last elemetn. Returns the deleted item. Raises IndexError if index is invalid
+l.pop()
+print(l)        # [3, 6, 7, 8, 9]
+
+print(l.pop(1)) # 6
+print(l)        # [3, 7, 8, 9]
