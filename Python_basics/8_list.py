@@ -63,7 +63,9 @@ print(min(list1))       # 1
 print(max(list1))       # 60
 print(sum(list1))       # 244
 print(sorted(list1))    # [1, 2, 5, 7, 9, 10, 40, 50, 60, 60]
+print(sorted(list1,reverse=True))    # [60, 60, 50, 40, 10, 9, 7, 5, 2, 1]
 """
+
 
 """
 l = [1, 4.5, 4+5j]
@@ -176,6 +178,7 @@ l1.f1()     # Here l1 object that wants to call f1 function from its list class.
 """
 
 
+"""
 l = [3,5,6,7,8,1,9,1]
 del l[1]        
 # del modifies the original list. del is a statement, not a method.
@@ -193,3 +196,22 @@ print(l)        # [3, 6, 7, 8, 9]
 
 print(l.pop(1)) # 6
 print(l)        # [3, 7, 8, 9]
+"""
+
+
+# List Comprehension
+"""
+l1 = [i+1 for i in range(5)]
+print(l1)
+
+l2 = [i**2 for i in range(2,10,2)]
+print(l2)
+"""
+
+
+# Create a list of first n odd natural numbers where n is given by user.
+"""
+n = int(input("Enter a number upto to which you want to print odd natural numbers: "))
+l3 = [2*x-1 for x in range(1,n+1)]
+print(l3)           # [1, 3, 5, 7, 9, 11, 13]
+"""
