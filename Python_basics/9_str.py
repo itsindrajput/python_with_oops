@@ -88,14 +88,21 @@ print(str1<str2)                #True as str2 comes after str1 in dictionary ord
 """
 
 
-# Common String Methods: All string methods return a new string — they do not modify the original string because strings in Python are immutable.
+# Common String Methods: All string methods return a new string — they do not modify the original string because strings in Python are immutable. help(str.index )
 """
 s = "Just looking like a wow."
+print(len(s))                 # 24
+print(s.index('o'))           # 6
+print(s.index('like'))        # 13
+
 print(s.upper())            # JUST LOOKING LIKE A WOW.
 print(s)                    # Just looking like a wow.
+print(s.isupper())          # False
 
 print(s.lower())            # just looking like a wow.
+print(s.islower())          # False
 print(s.capitalize())       # Just looking like a wow.
+#print(s.iscapitalize())    # AttributeError: 'str' object has no attribute 'iscapitalize'.
 print(s.title())            # Just Looking Like A Wow.
 """
 
@@ -114,11 +121,13 @@ print(url.strip("/er"))     # user/profil
 
 """
 text = "Hello World"
-print(text.replace("World","Pyhton"))       # Hello Pyhton
+print(text.replace("World","Python"))       # Hello Python
+print(text.replace("l","q"))                # Heqqo Worqd
 print(text.startswith('He'))                # True
 print(text.endswith('ld'))                  # True
 print(text.find('W'))                       # 6
 print(text.count("l"))                      # 3
+print(text.count(" "))                      # 1 count number of words in a string based on the space.
 
 sen1 = "abc"
 print(sen1.isalpha())                        # True
@@ -142,6 +151,8 @@ print("My name is %s and I am %d years old." %(name, age)) # My name is Rishabh 
 print("My name is {} and I am {} years old.".format(name,age)) # My name is Rishabh and I am 25 years old.
 
 print(f"My name is {name} and I am {age} years old.") # My name is Rishabh and I am 25 years old.
+
+print("I'm {1} years old. My Name is {0}.".format(name,age))
 """
 
 
@@ -151,11 +162,27 @@ s = "Python is awesome"
 words = s.split()
 print(words)                # ['Python', 'is', 'awesome']
 
+print(s.split(" "))         # ['Python', 'is', 'awesome']
+
 # join() — Converts list to string
 str1 = "-"
 joined = str1.join(words)
 print(joined)               # Python-is-awesome
 """
+
+
+# Example:
+"""
+string = input("Enter some number seperated by commas: ")
+res = string.split(",")
+print(res)                         # ['1', '2', '3', '4', '5']
+result = [int(i) for i in res]
+print(result)                      # [1, 2, 3, 4, 5]
+"""
+
+#OR
+
+# print([int(i) for i in input("Enter some number seperated by commas: ").split(",")])
 
 
 # Slicing Operator:
