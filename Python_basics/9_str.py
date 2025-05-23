@@ -185,13 +185,69 @@ print(result)                      # [1, 2, 3, 4, 5]
 # print([int(i) for i in input("Enter some number seperated by commas: ").split(",")])
 
 
-# Slicing Operator:
+# Slicing Operator: Syntax: s[start:stop:step]
 """
-s = "rishabh"
+#    012345678
+s = "australia"
+print(s[0:9:1])          # australia
+print(s[0:9:2])          # asrla
+print(s[9:0:-1])         # ailartsu
 
-# Syntax: s[start:stop:step]
-print(s[0:4])             # rish
-print(s[:4])              # rish
-print(s[::2])             # rsah
-print(s[::-1])            # hbahsir (reversed string)
+print(s[0:4])             # aust
+print(s[:4])              # aust
+print(s[::2])             # asrla [start:end:2]
+
+print(s[::1])             # australia (end will be last index but inclusive.)
+print(s[::-1])            # ailartsua (reversed string)        
 """
+
+
+"""
+If start and end is not specified, the behavior depends on the value of step:
+If step is positive (step > 0):
+start defaults to 0 (beginning of the sequence).
+print(s[:7:1])            # austral
+
+end will be last index but inclusive.
+print(s[0::2])            # asrla
+
+If step is negative (step < 0):
+start defaults to the last element of the sequence.
+print(s[:7:-1])            # a
+
+end will be start index at 0 inclusive
+print(s[9::-1])            # ailartsua
+"""
+
+#Example1: Write a python script to reverse a given string word wise: Input:  Python is fun Output: fun is Python
+
+"""
+# ❌
+string2 = input("Enter a string to reverse it word wise: ")
+print(string2[::-1])      # nuf si nohtyP
+"""
+
+"""
+string2 = input("Enter a string to reverse it word wise: ")
+list2 = string2.split()
+splitlist = list2[::-1]
+print(" ".join(splitlist))
+"""
+
+# OR
+
+#print(' '.join(input().split()[::-1]))
+
+
+
+#Example2: Write a python script to Reverse each word in a sentence. Input:  Python is fun Output: nohtyP si nuf
+"""
+user_input = input("Reverse each word in a sentence: ")
+list1 = user_input.split()
+for i in list1:
+  print(i[::-1], end=" ")
+"""
+
+# OR
+
+#print(" ".join([x[::-1] for x in input("Reverse each word in a sentence: ").split()]))
