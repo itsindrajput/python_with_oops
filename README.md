@@ -14,15 +14,16 @@ This repo is perfect for:
 ## 📁 Folder Structure
 
 python_with_oops/
-└── Python_Basics/ # Python fundamentals (syntax, loops, functions, etc.)
-└── Oops_In_Python/ # Object-Oriented Programming: classes, inheritance, etc.
-└── Miscellaneous/ # Handy scripts, tools, and unique use-cases
-└── Python_MySQL/
-└── Projects/
-├──Tkinter/
-├──atm.py
-├── atm_extended
-└── README.md # This file
+├── Python_Basics/          
+├── Oops_In_Python/        
+├── Miscellaneous/          
+├── Python_MySQL/
+├── Projects/
+│   ├── Tkinter/
+│   ├── atm.py
+│   ├── atm_extended/
+├── README.md   
+
 
 ---
 
@@ -58,5 +59,5 @@ python_with_oops/
 1. **Clone this repository**
    ```bash
    git clone https://github.com/itsindrajput/python_with_oops.git
-   cd python-essentials-and-projects
+   cd python_with_oops
    ```
