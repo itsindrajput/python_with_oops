@@ -15,16 +15,16 @@ This repo is perfect for:
 
 ```
 python_with_oops
-|  ├── Python_Basics          
-|  ├── Oops_In_Python        
-|  ├── Miscellaneous          
+|  ├── Python_Basics
+|  ├── Oops_In_Python
+|  ├── Miscellaneous
 |  ├── Python_MySQL
 |  ├── Projects
 |  │   ├── Tkinter
 |  │   ├── atm.py
 |  │   └── atm_extended
-|  ├── README.md   
-````
+|  ├── README.md
+```
 
 ---
 

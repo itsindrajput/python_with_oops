@@ -1,3 +1,9 @@
+# Indexing In Range:
+r = range(10,15,1)
+print(r[0], r[1], r[2],r[3], r[4])              # 10 11 12 13 14
+#print(r[5])                                     # IndexError: range object index out of range
+
+
 #The word Iterable comes from Iteration, which means repetition of a process.
 #Example:
 """
@@ -59,8 +65,10 @@ for i in r:
 
 
 # Count Down Timer Example
+"""
 import time 
 for i in range(5,0,-1):
     print(i)
     time.sleep(1)
 print("Time's Up!")
+"""
