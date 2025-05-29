@@ -12,7 +12,6 @@ This means that in the Gregorian calendar, the years 2000 and 2400 are leap year
 
 
 
-
 #First Way:
 """
 number = int(input("Enter a year to check if it is leap year or not!"))
@@ -29,7 +28,6 @@ if (number%4 == 0):
 else:
   print("Not A Leap Year")
 """
-
 
 
 
