@@ -1,4 +1,3 @@
-# OOPs in Python 
 # OOP- Object Oriented Programming
 
 # using list - creating student records
