@@ -45,14 +45,14 @@ Here, Student() will create an instance object and s1 and s2 are refering to tha
 4. Instance Object Variable
 """
 
-
+ 
 # __init__() method:
 """
 class Test:
     x = 5
     y = 6
-    def __init__(self,a):
-        self.a = a
+    def __init__(self,a):   # Here a is local variable
+        self.a = a          # And self.a is instance variable.
 
 t1 = Test(6)            # __init__(t1,6)
 t2 = Test(8)            # __init__(t2,8)
